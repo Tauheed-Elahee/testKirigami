@@ -1,1 +1,7 @@
-*.kdev4
+# Ignore Kdevelop project file anywhere in the project
+**/*.kdev4
+
+# Ignore the build folder.
+build/
+# Ignore everything in the build folder.
+build/**
