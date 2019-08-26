@@ -1,0 +1,11 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/">
+        <file>qtquickcontrols2.conf</file>
+    </qresource>
+    <qresource prefix="/UI">
+        <file alias="Root.qml">UI/Root.qml</file>
+        <file alias="GlobalDrawer.qml">UI/GlobalDrawer.qml</file>
+        <file alias="MainPage.qml">UI/MainPage.qml</file>
+        <file alias="AlexPage.qml">UI/AlexPage.qml</file>
+    </qresource>
+</RCC>
