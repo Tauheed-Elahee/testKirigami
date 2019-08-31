@@ -2,8 +2,8 @@
 #include <qt5/QtQml/QQmlApplicationEngine>
 #include <qt5/QtCore/QStringLiteral>
 
-// #include <KF5/KCoreAddons/KAboutData>
-// #include <KF5/KI18n/KLocalizedString>
+#include <KF5/KCoreAddons/KAboutData>
+#include <KF5/KI18n/KLocalizedString>
 
 int main(int argc, char *argv[]) {
     QGuiApplication app(argc, argv);

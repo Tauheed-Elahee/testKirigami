@@ -22,6 +22,8 @@ find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
 
 # Find KDE modules
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
+    CoreAddons  # KAboutData
+    I18n        # KLocalizedString
     Kirigami2   # Kirigami
 
 )

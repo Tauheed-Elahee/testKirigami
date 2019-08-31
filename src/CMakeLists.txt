@@ -43,5 +43,7 @@ target_link_libraries(${PROJECT}
     Qt5::Widgets
     Qt5::Qml
     Qt5::Quick
+    KF5::CoreAddons
+    KF5::I18n
     KF5::Kirigami2
 )
