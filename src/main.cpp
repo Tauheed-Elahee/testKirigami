@@ -8,21 +8,21 @@
 
 int main(int argc, char *argv[]) {
     QGuiApplication app(argc, argv);
-    KLocalizedString::setApplicationDomain("tutorial1");
+    KLocalizedString::setApplicationDomain("testKirigami");
     
     KAboutData aboutData(
                          // The program name used internally. (componentName)
-                         QStringLiteral("tutorial1"),
+                         QStringLiteral("testKirigami"),
                          // A displayable program name string. (displayName)
-                         i18n("Tutorial 1"),
+                         i18n("testKirigami"),
                          // The program version string. (version)
                          QStringLiteral("1.0"),
                          // Short description of what the app does. (shortDescription)
-                         i18n("Displays a KMessageBox popup"),
+                         i18n("Testing Kirigami Framework"),
                          // The license this code is released under
                          KAboutLicense::GPL,
                          // Copyright Statement (copyrightStatement = QString())
-                         i18n("(c) 2015"),
+                         i18n("(c) 2019"),
                          // Optional text shown in the About box.
                          // Can contain any information desired. (otherText)
                          i18n("Some text..."),

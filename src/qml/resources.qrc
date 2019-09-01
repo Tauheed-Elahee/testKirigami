@@ -5,6 +5,7 @@
     <qresource prefix="/UI">
         <file alias="Root.qml">UI/Root.qml</file>
         <file alias="GlobalDrawer.qml">UI/GlobalDrawer.qml</file>
+        <file alieas="AboutPage.qml">UI/AboutPage.qml</file>
         <file alias="MainPage.qml">UI/MainPage.qml</file>
         <file alias="AlexPage.qml">UI/AlexPage.qml</file>
     </qresource>
