@@ -11,4 +11,7 @@ Kirigami.GlobalDrawer {
             iconName: "view-list-icons"
         }
     ]
+    topContent: [
+        // Qt <Item> is not the same as Qt <Action>
+    ]
 }
