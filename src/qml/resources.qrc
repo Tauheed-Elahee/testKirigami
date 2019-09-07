@@ -9,4 +9,24 @@
         <file alias="MainPage.qml">UI/MainPage.qml</file>
         <file alias="AlexPage.qml">UI/AlexPage.qml</file>
     </qresource>
+    <qresource prefix="/Images">
+        <!-- png files -->
+        <file alieas="kde-logo-blue.png">Images/kde-logo-white-blue-3000x3000.png</file>
+        <file alieas="kde-logo-blue-rounded.png">Images/kde-logo-white-blue-rounded-3000x3000.png</file>
+        <file alieas="kde-logo-blue-transparent.png">Images/kde-logo-blue-transparent-3000x3000.png</file>
+        <file alieas="kde-logo-gray.png">Images/kde-logo-white-gray-3000x3000.png</file>
+        <file alieas="kde-logo-gray-rounded.png">Images/kde-logo-white-gray-rounded-3000x3000.png</file>
+        <file alieas="kde-logo-gray-transparent.png">Images/kde-logo-gray-transparent-3000x3000.png</file>
+        <file alieas="plasma-logo-colorful.png">Images/plasma-logo-colorful-3000x3000.png</file>
+        <file alieas="plasma-logo-monochrome.png">Images/plasma-logo-monochrome-3000x3000.png</file>
+        <!-- svg files -->
+        <file alieas="kde-logo-blue.svg">Images/kde-logo-white-blue.svg</file>
+        <file alieas="kde-logo-blue-rounded.svg">Images/kde-logo-white-blue-rounded.svg</file>
+        <file alieas="kde-logo-blue-transparent.svg">Images/kde-logo-blue-transparent.svg</file>
+        <file alieas="kde-logo-gray.svg">Images/kde-logo-white-gray.svg</file>
+        <file alieas="kde-logo-gray-rounded.svg">Images/kde-logo-white-gray-rounded.svg</file>
+        <file alieas="kde-logo-gray-transparent.svg">Images/kde-logo-gray-transparent.svg</file>
+        <file alieas="plasma-logo-colorful.svg">Images/plasma-logo-colorful.svg</file>
+        <file alieas="plasma-logo-monochrome.svg">Images/plasma-logo-monochrome.svg</file>
+    </qresource>
 </RCC>
