@@ -65,6 +65,11 @@ Kirigami.Page {
                 print(globalDrawer.drawerOpen);
             }
         }
+        QQC2.Button {
+            Kirigami.FormData.label: "Passive Notification: "
+            text: "Click Me"
+            onClicked: root.showPassiveNotification("Passive Notification")
+        }
         
         // Wanted to test Kirigami.ActionTextField but it requires org.kde.kirigami 2.7
         

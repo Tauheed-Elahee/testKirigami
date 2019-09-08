@@ -15,7 +15,9 @@ Kirigami.GlobalDrawer {
             Layout.alignment: Qt.AlignRight
             id: right
             text: parent.width
-            onClicked: print(globalDrawer.collapsed)
+            onClicked: {print(globalDrawer.collapsed)
+                root.showPassiveNotification("test")
+            }
         },
         QQC2.Button {
             Layout.alignment: Qt.AlignLeft
