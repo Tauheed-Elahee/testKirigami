@@ -41,6 +41,7 @@ Kirigami.Page {
         id: kirigamiFormLayout
         
         QQC2.TextField {
+            id: firstTextField
             Kirigami.FormData.label: "Label:"
             width: parent.width
         }
@@ -50,6 +51,19 @@ Kirigami.Page {
         }
         QQC2.TextField {
             Kirigami.FormData.label: "Label:"
+        }
+        QQC2.Button {
+            text: "Get text"
+            onClicked: print(firstTextField.text)
+        }
+        QQC2.Button {
+            text: "Collapse"
+            onClicked: {
+                print(globalDrawer.collapsed);
+                globalDrawer.collapsed = !globalDrawer.collapsed;
+                print(globalDrawer.collapsed);
+                print(globalDrawer.drawerOpen);
+            }
         }
         
         // Wanted to test Kirigami.ActionTextField but it requires org.kde.kirigami 2.7
