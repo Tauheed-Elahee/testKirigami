@@ -4,6 +4,8 @@
 #include <qt5/QtCore/QCommandLineParser>
 #include <qt5/QtSvg/QtSvg>
 #include <qt5/QtSvg/QSvgRenderer>
+#include <qt5/QtQuick/QQuickImageProvider>
+#include <qt5/QtQuick/QQuickAsyncImageProvider>
 
 #include <KF5/KCoreAddons/KAboutData>
 #include <KF5/KI18n/KLocalizedString>

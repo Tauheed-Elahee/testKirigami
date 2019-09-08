@@ -6,7 +6,7 @@ import org.kde.kirigami 2.6 as Kirigami
 Kirigami.GlobalDrawer {
     id: globalDrawer
     title: "Global Drawer"
-    bannerImageSource: "qrc:/Images/plasma-logo-colorful.png"
+    bannerImageSource: "qrc:/Images/Kde-Logo-Blue.png"
     actions: [
         Kirigami.Action {
             text: i18n("&View")

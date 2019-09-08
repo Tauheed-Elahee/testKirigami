@@ -3,7 +3,7 @@ import QtQuick.Layouts 1.9
 import QtQuick.Controls 2.4 as QQC2
 import org.kde.kirigami 2.6 as Kirigami
 
-Kirigami.Page {
+Kirigami.ScrollablePage {
     id: mainPage
     
     title: "Main Page"
