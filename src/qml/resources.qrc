@@ -19,5 +19,14 @@
         <file alieas="kde-logo-gray-transparent.png">Images/kde-logo-gray-transparent-3000x3000.png</file>
         <file alieas="plasma-logo-colorful.png">Images/plasma-logo-colorful-3000x3000.png</file>
         <file alieas="plasma-logo-monochrome.png">Images/plasma-logo-monochrome-3000x3000.png</file>
+        <!-- svg files -->
+        <file alieas="kde-logo-blue.svg">Images/kde-logo-white-blue-source.svg</file>
+        <file alieas="kde-logo-blue-rounded.svg">Images/kde-logo-white-blue-rounded-source.svg</file>
+        <file alieas="kde-logo-blue-transparent.svg">Images/kde-logo-blue-transparent-source.svg</file>
+        <file alieas="kde-logo-gray.svg">Images/kde-logo-white-gray-source.svg</file>
+        <file alieas="kde-logo-gray-rounded.svg">Images/kde-logo-white-gray-rounded-source.svg</file>
+        <file alieas="kde-logo-gray-transparent.svg">Images/kde-logo-gray-transparent-source.svg</file>
+        <file alieas="plasma-logo-colorful.svg">Images/plasma-logo-colorful.svg</file>
+        <file alieas="plasma-logo-monochrome.svg">Images/plasma-logo-monochrome.svg</file>
     </qresource>
 </RCC>

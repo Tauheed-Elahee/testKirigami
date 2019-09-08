@@ -18,6 +18,7 @@ find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Widgets # QApplicaion
     Quick   # Qt Quick
     Qml     # QML stuff
+    Svg     # SVG files
 )
 
 # Find KDE modules

@@ -5,6 +5,8 @@ import org.kde.kirigami 2.6 as Kirigami
 
 Kirigami.GlobalDrawer {
     id: globalDrawer
+    title: "Global Drawer"
+    bannerImageSource: "qrc:/Images/plasma-logo-colorful.png"
     actions: [
         Kirigami.Action {
             text: i18n("&View")
@@ -19,7 +21,6 @@ Kirigami.GlobalDrawer {
             iconName: "help-about"
         }
     ]
-    bannerImageSource: "qrc:/Images/kde-logo-blue.png"
     showContentWhenCollapsed: true
     // topContent: [
         // Qt <Item> is not the same as Qt <Action>

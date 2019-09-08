@@ -2,6 +2,8 @@
 #include <qt5/QtQml/QQmlApplicationEngine>
 #include <qt5/QtCore/QStringLiteral>
 #include <qt5/QtCore/QCommandLineParser>
+#include <qt5/QtSvg/QtSvg>
+#include <qt5/QtSvg/QSvgRenderer>
 
 #include <KF5/KCoreAddons/KAboutData>
 #include <KF5/KI18n/KLocalizedString>
