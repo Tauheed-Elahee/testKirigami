@@ -4,6 +4,7 @@ import QtQuick.Controls 2.12 as QQC2
 import org.kde.kirigami 2.10 as Kirigami
 
 Kirigami.Page {
+    signal qmlSignal(string msg)
     id: mainPage
     
     title: "Main Page"
@@ -53,8 +54,12 @@ Kirigami.Page {
             Kirigami.FormData.label: "Label:"
         }
         QQC2.Button {
+            id: getText
             text: "Get text"
-            onClicked: print(firstTextField.text)
+            signal qmlSignal(string msg)
+            onClicked: {print(firstTextField.text);
+                print(this.text);
+                root.qmlSignal("Testing from the main page!!!\n")}
         }
         QQC2.Button {
             text: "Collapse"

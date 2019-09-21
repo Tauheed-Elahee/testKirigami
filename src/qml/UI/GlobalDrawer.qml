@@ -41,5 +41,4 @@ Kirigami.GlobalDrawer {
         }
     ]
     showContentWhenCollapsed: true
-    
 }

@@ -10,11 +10,11 @@ qtquick_compiler_add_resources(QT_RESOURCES ${CMAKE_CURRENT_SOURCE_DIR}/qml/reso
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMILE_FLAGS}")
 
 
-# INFO: this is no longer needed
+# INFO: this is no longer needed. Yes you do, they lied.
 # # Additional compilation steps for moc, rcc and uic for Qt programs
-# set(CMAKE_AUTOMOC ON)
-# set(CMAKE_AUTORCC ON)
-# set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
 # Project executable
 set(PROJECT "testKirigami")
