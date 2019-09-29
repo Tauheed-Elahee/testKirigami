@@ -4,7 +4,6 @@ import QtQuick.Controls 2.12 as QQC2
 import org.kde.kirigami 2.10 as Kirigami
 
 Kirigami.Page {
-    signal qmlSignal(string msg)
     id: mainPage
     
     title: "Main Page"
@@ -56,10 +55,14 @@ Kirigami.Page {
         QQC2.Button {
             id: getText
             text: "Get text"
-            signal qmlSignal(string msg)
-            onClicked: {print(firstTextField.text);
+            
+            signal clickedButton(string str)
+
+            onClicked: {
+                print(firstTextField.text);
                 print(this.text);
-                root.qmlSignal("Testing from the main page!!!\n")}
+                getText.clickedButton("Hello from QML");
+            }
         }
         QQC2.Button {
             text: "Collapse"
@@ -70,11 +73,15 @@ Kirigami.Page {
                 print(globalDrawer.drawerOpen);
             }
         }
+        
+        /* // Problem here when uncommented pressing "Alt" messes up the ui
         QQC2.Button {
             Kirigami.FormData.label: "Passive Notification: "
             text: "Click Me"
             onClicked: root.showPassiveNotification("Passive Notification")
         }
+        */
+        
         
         // Wanted to test Kirigami.ActionTextField but it requires org.kde.kirigami 2.7
         

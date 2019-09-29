@@ -12,7 +12,5 @@ Kirigami.ApplicationWindow {
         id: contextDrawer
     }
     
-    signal qmlSignal(string msg)
-    
     pageStack.initialPage: Qt.resolvedUrl("qrc:/UI/MainPage.qml")
 }
