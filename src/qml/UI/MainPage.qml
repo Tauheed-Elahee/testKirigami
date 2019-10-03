@@ -67,10 +67,10 @@ Kirigami.Page {
         QQC2.Button {
             text: "Collapse"
             onClicked: {
-                print(globalDrawer.collapsed);
+//                 print(globalDrawer.collapsed);
                 globalDrawer.collapsed = !globalDrawer.collapsed;
                 print(globalDrawer.collapsed);
-                print(globalDrawer.drawerOpen);
+//                 print(globalDrawer.drawerOpen);
             }
         }
         
@@ -94,4 +94,13 @@ Kirigami.Page {
             onClicked: pageStack.push(Qt.resolvedUrl("qrc:/UI/AlexPage.qml"))
         }
     }
+    
+    /* This does not produce what I'm looking for
+    Kirigami.InlineMessage {
+        visible: true
+        text: "test"
+        type: Kirigami.MessageType.Positive
+//         showCloaseButton: true
+    }
+    */
 }
