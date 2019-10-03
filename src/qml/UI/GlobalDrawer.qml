@@ -16,14 +16,13 @@ Kirigami.GlobalDrawer {
             id: right
             text: parent.width
             onClicked: {print(globalDrawer.collapsed)
-                root.showPassiveNotification("test")
+                root.showPassiveNotification("This is a Passive Notification", 100, "Hide this", root.hidePassiveNotification)
             }
         },
         QQC2.Button {
             Layout.alignment: Qt.AlignLeft
             id: left
             text: parent.width
-            onClicked: root.showPassiveNotification("test")
         }
     ]
     

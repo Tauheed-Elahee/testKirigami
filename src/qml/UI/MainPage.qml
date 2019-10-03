@@ -33,6 +33,11 @@ Kirigami.Page {
             iconName: "editor"
             text: "Edit Action"
             onTriggered: print("context edit")
+        },
+        Kirigami.Action {
+            iconName: "avatar-default-symbolic"
+            text: "Second Action"
+            onTriggered: print("At least two contectual actions needed for an overflow list")
         }
     ]
     
