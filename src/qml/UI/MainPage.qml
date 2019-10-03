@@ -82,6 +82,11 @@ Kirigami.Page {
         }
         */
         
+        Text {
+            text: "Why is the passive notification not working?"
+            color: Kirigami.Theme.textColor
+        }
+        
         
         // Wanted to test Kirigami.ActionTextField but it requires org.kde.kirigami 2.7
         
