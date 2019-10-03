@@ -23,6 +23,7 @@ Kirigami.GlobalDrawer {
             Layout.alignment: Qt.AlignLeft
             id: left
             text: parent.width
+            onClicked: root.showPassiveNotification("test")
         }
     ]
     
