@@ -51,6 +51,10 @@ int main(int argc, char *argv[]) {
     QQmlApplicationEngine engine;
     engine.load(QUrl(QStringLiteral("qrc:/UI/Root.qml"))); //qrc:{not the actual path rather it is the file as referenced in the resources.qrc file}
     
+    if (engine.rootObjects().isEmpty()) {
+        return -1;
+    }
+    
     /*  Failed attempt
     // Attach a singal in QML to a C++ class
     QObject* root = engine.rootObjects().first();   // References the Application Window itself as root

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
 set(QT_MIN_VERSION "5.10.0")
-set(KF5_MIN_VERSION "5.50.0")
+set(KF5_MIN_VERSION "5.60.0")
 
 # Extra CMake Modules
 find_package(ECM 1.0.0 REQUIRED NO_MODULE)
