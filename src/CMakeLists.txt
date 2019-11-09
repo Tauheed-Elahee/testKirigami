@@ -21,7 +21,7 @@ set(PROJECT "testKirigami")
 project(${PROJECT})
 
 # Compiler flags for compiling C++ sources
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -std=c++11 -fstrict-aliasing -pedantic-errors -pedantic -Wno-deprecated-declarations -Wno-unused-variable")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -std=c++17 -fstrict-aliasing -pedantic-errors -pedantic -Wno-deprecated-declarations -Wno-unused-variable")
 
 
 # Define HEADERS and SOURCES varibales for all header and source files

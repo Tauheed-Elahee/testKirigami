@@ -3,11 +3,12 @@
         <file>qtquickcontrols2.conf</file>
     </qresource>
     <qresource prefix="/UI">
-        <file alias="Root.qml">UI/Root.qml</file>
+        <file alias="main.qml">UI/main.qml</file>
         <file alias="GlobalDrawer.qml">UI/GlobalDrawer.qml</file>
         <file alias="AboutPage.qml">UI/AboutPage.qml</file>
         <file alias="MainPage.qml">UI/MainPage.qml</file>
         <file alias="AlexPage.qml">UI/AlexPage.qml</file>
+        <file alias="ListPage.qml">UI/ListPage.qml</file>
     </qresource>
     <qresource prefix="/Images">
         <!-- png files -->

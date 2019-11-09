@@ -7,11 +7,13 @@
 #include <qt5/QtQuick/QQuickImageProvider>
 #include <qt5/QtQuick/QQuickAsyncImageProvider>
 #include <qt5/QtQml/QQmlComponent>
+#include <qt5/QtQml/QQmlContext>
 
 #include <KF5/KCoreAddons/KAboutData>
 #include <KF5/KI18n/KLocalizedString>
 
-#include "QmlCppBridge.h"
+// #include "QmlCppBridge.h"
+#include "MyClass.hpp"
 
 int main(int argc, char *argv[]) {
     QGuiApplication app(argc, argv);
@@ -27,7 +29,7 @@ int main(int argc, char *argv[]) {
                          // Short description of what the app does. (shortDescription)
                          i18n("Testing Kirigami Framework"),
                          // The license this code is released under
-                         KAboutLicense::GPL,
+                         KAboutLicense::GPL_V3,
                          // Copyright Statement (copyrightStatement = QString())
                          i18n("(c) 2019"),
                          // Optional text shown in the About box.
@@ -48,8 +50,15 @@ int main(int argc, char *argv[]) {
     parser.process(app);
     aboutData.processCommandLine(&parser);
     
+    MyClass myClass;
+    qmlRegisterType<MyClass>("i.did.it.myclass", 0, 1, "MyClass");
+    
     QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/UI/Root.qml"))); //qrc:{not the actual path rather it is the file as referenced in the resources.qrc file}
+    
+    QQmlContext* context = new QQmlContext(engine.rootContext());
+    context->setContextProperty("MyClass", &myClass);
+    
+    engine.load(QUrl(QStringLiteral("qrc:/UI/main.qml"))); //qrc:{not the actual path rather it is the file as referenced in the resources.qrc file}
     
     if (engine.rootObjects().isEmpty()) {
         return -1;

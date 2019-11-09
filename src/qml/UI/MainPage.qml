@@ -67,6 +67,7 @@ Kirigami.Page {
                 print(firstTextField.text);
                 print(this.text);
                 getText.clickedButton("Hello from QML");
+                MyClass.printStuff();
             }
         }
         QQC2.Button {
@@ -88,6 +89,7 @@ Kirigami.Page {
         */
         
         Text {
+            id: asdf
             text: "Why is the passive notification not working?"
             color: Kirigami.Theme.textColor
         }
