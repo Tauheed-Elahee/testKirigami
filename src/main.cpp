@@ -13,7 +13,7 @@
 #include <KF5/KI18n/KLocalizedString>
 
 // #include "QmlCppBridge.h"
-#include "MyClass.hpp"
+#include "MyClass.h"
 
 int main(int argc, char *argv[]) {
     QGuiApplication app(argc, argv);
