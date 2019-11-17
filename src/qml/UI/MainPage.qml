@@ -67,7 +67,7 @@ Kirigami.Page {
                 print(firstTextField.text);
                 print(this.text);
                 getText.clickedButton("Hello from QML");
-                MyClass.printStuff();
+                myClass.test();
             }
         }
         QQC2.Button {

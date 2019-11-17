@@ -50,13 +50,20 @@ int main(int argc, char *argv[]) {
     parser.process(app);
     aboutData.processCommandLine(&parser);
     
+    // Did not work
+    /*
     MyClass myClass;
     qmlRegisterType<MyClass>("i.did.it.myclass", 0, 1, "MyClass");
     
-    QQmlApplicationEngine engine;
-    
     QQmlContext* context = new QQmlContext(engine.rootContext());
     context->setContextProperty("MyClass", &myClass);
+    */
+    
+    QScopedPointer<MyClass> myClass(new MyClass);
+    
+    QQmlApplicationEngine engine;
+    
+    engine.rootContext()->setContextProperty("myClass", myClass.data());
     
     engine.load(QUrl(QStringLiteral("qrc:/UI/main.qml"))); //qrc:{not the actual path rather it is the file as referenced in the resources.qrc file}
     
