@@ -12,7 +12,6 @@
 #include <KF5/KCoreAddons/KAboutData>
 #include <KF5/KI18n/KLocalizedString>
 
-// #include "QmlCppBridge.h"
 #include "MyClass.h"
 
 int main(int argc, char *argv[]) {
