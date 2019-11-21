@@ -15,6 +15,6 @@ make
 
 
 
-# Current
-The application looks like the following picture. The pictures can be found in Gallery folder.
+# Current State
+The application looks like the following picture. The pictures can be found in the GALLERY folder.
 ![MainPage](GALLERY/MainPage.png)
