@@ -5,13 +5,13 @@ This project is a personal journey of learning how to use the Qt toolkit, KDE Fr
 
 # Building
 Type the following commands in the terminal
-'''bash
+```
 mkdir build
 cd build
 cmake ..
 make
 ./src/testKirigami
-'''
+```
 
 
 
