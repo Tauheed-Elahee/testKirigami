@@ -71,34 +71,5 @@ int main(int argc, char *argv[]) {
         return -1;
     }
     
-    /*  Failed attempt
-    // Attach a singal in QML to a C++ class
-    QObject* root = engine.rootObjects().first();   // References the Application Window itself as root
-    QObject* pageStack = root->findChild<QObject*>(QString("globalDrawer"));
-    QObject* mainPage = pageStack->findChild<QObject*>(QString("mainPage"));
-    QObject* mainPage2 = engine.findChild<QObject*>(QString("mainPage"));
-    QObject* getText = mainPage->findChild<QObject*>(QString("getText"));
-    MyClass myObject;
-    QObject::connect(root, SIGNAL(qmlSignal(QString)), &myObject, SLOT(cppSlot(QString)));
-    */
-    
-    
-    // Call C++ in QML
-    // Register C++ class as a QML module, 1 & 0 are the major and minor verion of the QML module
-    //qmlRegisterType<QmlCppBridge>("QmlCppBridge", 1, 0, "QmlCppBridge");
-    
-    
-    
-    /* Also did not work
-    // Call QML in C++
-    QQmlComponent component(&engine, QUrl(QStringLiteral("qrc:/UI/MainPage")));
-    QObject* mainpage = component.create();
-    QObject* item = mainpage->findChild<QObject*>("getText");
-    QmlCppBridge qmlcppbridge(mainpage);
-    QObject::connect(item, SIGNAL(clickedButton(QString)), &qmlcppbridge, SLOT(cppSlot(QString)));
-    */
-    
-    
-    
     return app.exec();
 }
