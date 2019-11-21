@@ -17,4 +17,4 @@ make
 
 # Current
 The application looks like the following picture. The pictures can be found in Gallery folder.
-![MainPage](Gallery/MainPage.png)
+![MainPage](GALLERY/MainPage.png)

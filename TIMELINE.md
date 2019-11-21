@@ -12,4 +12,4 @@ Was able to assign commits to me. Still no log/journal/diary.
 ### 2019-11-20
 Was able to finally connect C++ to QML and be able to press a button in qml and have a cout something to the terminal.
 Originally it only output to the terminal when exiting the program then something happened, probably added test.txt or more likely did a deleted the build directory and did a clean build. After this cout was outputting to the terminal right when I press a button instead of when I quit the program.
-![2019-11-20](Timeline_Gallery/2019-11-20.png)
+![2019-11-20](GALLERY/TIMELINE/2019-11-20.png)
