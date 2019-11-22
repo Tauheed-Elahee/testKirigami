@@ -16,5 +16,10 @@ make
 
 
 # Current State
-The application looks like the following picture. The pictures can be found in the GALLERY folder.
+The pictures can be found in the GALLERY folder.
+
+The application looks like the following picture.
 ![MainPage](GALLERY/MainPage.png)
+
+The application can copy contents of one file to another. The first two lines of the second file is to check if the files were opened successfully.
+![Copying_Files](GALLERY/Copying_between_files.png)

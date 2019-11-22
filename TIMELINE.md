@@ -15,4 +15,5 @@ Originally it only output to the terminal when exiting the program then somethin
 ![2019-11-20](GALLERY/TIMELINE/2019-11-20.png)
 
 ### 2019-11-21
-Was abile to load data from a text file on disk and then output and save it to a second text file. Found out one must use QString when working with Qt/QML and cannot send C++ std::string from QML to C++. I can now send text from the textfield within the same page using a button to C++. The textfield must have an id to do this. I have not tried to get information from other pages using this method yet. My guess is that it will not work because I could not access the ids from elements in other pages, I will look into it though.
+Was abile to load data from a text file on disk and then output and save it to a second text file. The first two lines of the second file is to check if the files were opened successfully. Found out one must use QString when working with Qt/QML and cannot send C++ std::string from QML to C++. I can now send text from the textfield within the same page using a button to C++. The textfield must have an id to do this. I have not tried to get information from other pages using this method yet. My guess is that it will not work because I could not access the ids from elements in other pages, I will look into it though.
+![2019-11-21](GALLERY/TIMELINE/2019-11-21.png)
