@@ -17,3 +17,7 @@ Originally it only output to the terminal when exiting the program then somethin
 ### 2019-11-21
 Was abile to load data from a text file on disk and then output and save it to a second text file. The first two lines of the second file is to check if the files were opened successfully. Found out one must use QString when working with Qt/QML and cannot send C++ std::string from QML to C++. I can now send text from the textfield within the same page using a button to C++. The textfield must have an id to do this. I have not tried to get information from other pages using this method yet. My guess is that it will not work because I could not access the ids from elements in other pages, I will look into it though.
 ![2019-11-21](GALLERY/TIMELINE/2019-11-21.png)
+
+### 2020-02-27
+I cloned the [KDE Kirigami Gallery repo](https://github.com/KDE/kirigami-gallery) and studied the source code. I then was able to understand that there was another aspect to the Global Drawer namely that it had a "modal" attribute. This was not documented in the KDE Kirigami API documentation. After learning about it I was able to make the application look like what KDE Discover Software Center does today (version 5.18.80 (Developer edition)). I was also able to make the collapsed global drawer to be always visible.
+![2020-02-27](GALLERY/TIMELINE/2020-02-27.png)

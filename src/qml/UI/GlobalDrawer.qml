@@ -7,7 +7,7 @@ Kirigami.GlobalDrawer {
     id: globalDrawer
     title: "Global Drawer"
     titleIcon: "qrc:/Images/Kde-Logo-Blue.png"
-    bannerImageSource: "qrc:/Images/Kde-Logo-Blue-Transparent.png"
+    bannerImageSource: "qrc:/Images/Plasma-Logo-Colorful.png"
     bannerVisible: true
     modal: false
     collapsible: true
