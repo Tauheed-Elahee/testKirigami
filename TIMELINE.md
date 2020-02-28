@@ -19,5 +19,5 @@ Was abile to load data from a text file on disk and then output and save it to a
 ![2019-11-21](GALLERY/TIMELINE/2019-11-21.png)
 
 ### 2020-02-27
-I cloned the [KDE Kirigami Gallery repo](https://github.com/KDE/kirigami-gallery) and studied the source code. I then was able to understand that there was another aspect to the Global Drawer namely that it had a "modal" attribute. This was not documented in the KDE Kirigami API documentation. After learning about it I was able to make the application look like what KDE Discover Software Center does today (version 5.18.80 (Developer edition)). I was also able to make the collapsed global drawer to be always visible.
+I cloned the [KDE Kirigami Gallery repo](https://github.com/KDE/kirigami-gallery) and studied the source code. I then was able to understand that there was another aspect to the Global Drawer namely that it had a "modal" attribute. This was not documented in the [KDE Kirigami API documentation](https://api.kde.org/frameworks/kirigami/html/index.html). After learning about it I was able to make the application look like what KDE Discover Software Center does today (version 5.18.80 (Developer edition)). I was also able to make the collapsed global drawer to be always visible.
 ![2020-02-27](GALLERY/TIMELINE/2020-02-27.png)
