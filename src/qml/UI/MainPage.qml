@@ -79,6 +79,12 @@ Kirigami.Page {
 //                 print(globalDrawer.drawerOpen);
             }
         }
+        QQC2.Button {
+            text: "Modal"
+            onClicked: {
+                globalDrawer.modal = !globalDrawer.modal;
+            }
+        }
         
         /* // Problem here when uncommented pressing "Alt" messes up the ui
         QQC2.Button {

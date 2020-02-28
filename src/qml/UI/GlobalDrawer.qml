@@ -8,15 +8,22 @@ Kirigami.GlobalDrawer {
     title: "Global Drawer"
     titleIcon: "qrc:/Images/Kde-Logo-Blue.png"
     bannerImageSource: "qrc:/Images/Kde-Logo-Gray-Transparent.png"
-    
+    bannerVisible: true
+    modal: false
+    collapsible: true
+//     collapsed: true
+    /*
     topContent: [
 //         Qt <Item> is not the same as Qt <Action>
         QQC2.Button {
             Layout.alignment: Qt.AlignRight
             id: right
             text: parent.width
-            onClicked: {print(globalDrawer.collapsed)
+            onClicked: {
+                print(globalDrawer.collapsed)
                 root.showPassiveNotification("This is a Passive Notification", 100, "Hide this", root.hidePassiveNotification)
+                //globalDrawer.collapsed = !globalDrawer.collapsed
+                //globalDrawer.showTopContentWhenCollapsed = true
             }
         },
         QQC2.Button {
@@ -25,7 +32,7 @@ Kirigami.GlobalDrawer {
             text: parent.width
         }
     ]
-    
+    */
     actions: [
         Kirigami.Action {
             text: i18n("&View")
@@ -34,6 +41,16 @@ Kirigami.GlobalDrawer {
         Kirigami.Action {
             text: "Settings"
             iconName: "settings-configure"
+            onTriggered: {
+//                 globalDrawer.collapsed = !globalDrawer.collapsed;
+            }
+            Kirigami.Action {
+                text: "Click Me"
+                iconName: "input-mouse-click-left"
+                onTriggered: {
+                    root.showPassiveNotification("You Clicked Me")
+                }
+            }
         },
         Kirigami.Action {
             text: "About"

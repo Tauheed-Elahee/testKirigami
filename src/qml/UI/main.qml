@@ -26,8 +26,8 @@ Kirigami.ApplicationWindow {
     }
     
     
-    wideScreen: false
-    reachableMode: true
+    wideScreen: true
+    reachableMode: false
     
     globalDrawer: GlobalDrawer{} // QML is not consistant it should be loaded in like the other components.
     
