@@ -111,6 +111,20 @@ Kirigami.Page {
             text: "Push to Alex's Blog"
             onClicked: pageStack.push(Qt.resolvedUrl("qrc:/UI/AlexPage.qml"))
         }
+        
+        Kirigami.InlineMessage {
+            id: testInLineMessage
+            Layout.fillWidth: true
+            visible: true
+            text: qsTr("test")
+            type: Kirigami.MessageType.Information
+            showCloseButton: true
+        }
+        
+        QQC2.Button {
+            text: qsTr("Toggle notification")
+            onClicked: testInLineMessage.visible = !testInLineMessage.visible;
+        }
     }
     
     /* This does not produce what I'm looking for
