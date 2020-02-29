@@ -24,6 +24,10 @@ Kirigami.ApplicationWindow {
         id: listPage
         ListPage{}
     }
+    Component{
+        id: toDoPage
+        ToDoPage{}
+    }
     
     
     wideScreen: true
@@ -35,5 +39,5 @@ Kirigami.ApplicationWindow {
         id: contextDrawer
     }
     
-    pageStack.initialPage: mainPage //Qt.resolvedUrl("qrc:/UI/MainPage.qml") or MainPage{}
+    pageStack.initialPage: toDoPage//mainPage //Qt.resolvedUrl("qrc:/UI/MainPage.qml") or MainPage{}
 }

@@ -9,6 +9,7 @@
         <file alias="MainPage.qml">UI/MainPage.qml</file>
         <file alias="AlexPage.qml">UI/AlexPage.qml</file>
         <file alias="ListPage.qml">UI/ListPage.qml</file>
+        <file alias="ToDoPage.qml">UI/ToDoPage.qml</file>
     </qresource>
     <qresource prefix="/Images">
         <!-- png files -->

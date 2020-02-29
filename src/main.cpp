@@ -13,6 +13,7 @@
 #include <KF5/KI18n/KLocalizedString>
 
 #include "MyClass.h"
+#include "todomodel.h"
 
 int main(int argc, char *argv[]) {
     QGuiApplication app(argc, argv);
@@ -59,6 +60,7 @@ int main(int argc, char *argv[]) {
     */
     
     QScopedPointer<MyClass> myClass(new MyClass);
+    qmlRegisterType<ToDoModel>("ToDo", 1, 0, "ToDoModel");
     
     QQmlApplicationEngine engine;
     
