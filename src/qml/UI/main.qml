@@ -30,6 +30,7 @@ Kirigami.ApplicationWindow {
     }
     
     
+    
     wideScreen: true
     reachableMode: false
     
