@@ -14,6 +14,7 @@
 
 #include "MyClass.h"
 #include "todomodel.h"
+#include "todolist.h"
 
 int main(int argc, char *argv[]) {
     QGuiApplication app(argc, argv);
@@ -61,8 +62,14 @@ int main(int argc, char *argv[]) {
     
     QScopedPointer<MyClass> myClass(new MyClass);
     qmlRegisterType<ToDoModel>("ToDo", 1, 0, "ToDoModel");
+    qmlRegisterUncreatableType<ToDoList>("ToDo", 1, 0, "ToDoList",
+        QStringLiteral("ToDoList should not be created in QML"));
+    
+    ToDoList toDoList;
     
     QQmlApplicationEngine engine;
+    
+    engine.rootContext()->setContextProperty(QStringLiteral("toDoList"), &toDoList);
     
     engine.rootContext()->setContextProperty("myClass", myClass.data());
     
