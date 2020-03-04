@@ -17,18 +17,7 @@ Kirigami.Page{
         clip: true
         
         model: ToDoModel {}
-        /*
-        model: ListModel {
-            ListElement {
-                done: true
-                desciption: "Wash the car"
-            }
-            ListElement {
-                done: false
-                desciption: "Fix the sink"
-            }
-        }
-        */
+        
         delegate: RowLayout {
             width: parent.width
             
@@ -38,8 +27,8 @@ Kirigami.Page{
             }
             
             QQC2.TextField {
-                text: model.desciption
-                onEditingFinished: model.desciption = text
+                text: model.description
+                onEditingFinished: model.description = text
                 Layout.fillWidth: true
             }
         }
