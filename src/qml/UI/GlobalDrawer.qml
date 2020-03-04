@@ -11,6 +11,7 @@ Kirigami.GlobalDrawer {
     bannerVisible: true
     modal: false
     collapsible: true
+    showHeaderWhenCollapsed: true
 //     collapsed: true
     /*
     topContent: [
