@@ -8,10 +8,25 @@ Kirigami.GlobalDrawer {
     title: "Global Drawer"
     titleIcon: "qrc:/Images/Kde-Logo-Blue.png"
     bannerImageSource: "qrc:/Images/Plasma-Logo-Colorful.png"
-    bannerVisible: true
+    bannerVisible: !globalDrawer.collapsible
     modal: false
     collapsible: true
     showHeaderWhenCollapsed: true
+    
+    header: RowLayout {
+            Layout.fillWidth: true
+            QQC2.ToolButton {
+                icon.name: "application-menu"
+                visible: globalDrawer.collapsible
+                checked: !globalDrawer.collapsed
+                onClicked: globalDrawer.collapsed = !globalDrawer.collapsed
+            }
+            Kirigami.SearchField {
+                visible: !globalDrawer.collapsed
+                Layout.fillWidth: true
+            }
+        }
+    
 //     collapsed: true
     /*
     topContent: [
