@@ -40,5 +40,5 @@ Kirigami.ApplicationWindow {
         id: contextDrawer
     }
     
-    pageStack.initialPage: toDoPage//mainPage //Qt.resolvedUrl("qrc:/UI/MainPage.qml") or MainPage{}
+    pageStack.initialPage: mainPage//mainPage //Qt.resolvedUrl("qrc:/UI/MainPage.qml") or MainPage{}
 }

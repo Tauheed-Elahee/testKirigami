@@ -21,8 +21,6 @@
 
 #include "todomodel.h"
 
-#include "todolist.h"
-
 ToDoModel::ToDoModel(QObject *parent)
     : QAbstractListModel(parent)
     , mList(nullptr)

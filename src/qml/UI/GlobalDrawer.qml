@@ -53,6 +53,10 @@ Kirigami.GlobalDrawer {
         Kirigami.Action {
             text: i18n("&View")
             iconName: "view-list-icons"
+            onTriggered:  {
+                globalDrawer.collapsible = !globalDrawer.collapsible;
+                root.showPassiveNotification(globalDrawer.collapsible);
+            }
         },
         Kirigami.Action {
             text: "Settings"
@@ -71,6 +75,13 @@ Kirigami.GlobalDrawer {
         Kirigami.Action {
             text: "About"
             iconName: "help-about"
+        },
+        Kirigami.Action {
+            text: "To Do"
+            iconName: "korg-todo"
+            onTriggered: {
+                root.pageStack.push(toDoPage);
+            }
         }
     ]
     showContentWhenCollapsed: true

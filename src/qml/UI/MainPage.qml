@@ -83,6 +83,7 @@ Kirigami.Page {
             text: "Modal"
             onClicked: {
                 globalDrawer.modal = !globalDrawer.modal;
+                console.log(globalDrawer.modal);
             }
         }
         

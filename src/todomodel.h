@@ -24,6 +24,8 @@
 
 #include <QAbstractListModel>
 
+#include <todolist.h>
+
 /**
  * @todo write docs
  */
