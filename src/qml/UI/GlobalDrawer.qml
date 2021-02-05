@@ -79,9 +79,31 @@ Kirigami.GlobalDrawer {
         Kirigami.Action {
             text: "To Do"
             iconName: "korg-todo"
-            onTriggered: {
-                root.pageStack.push(toDoPage);
+            /*
+              QML 5.15 error
+            Connections {
+                function pushToDoPage() {
+                    console.log("test");
+                }
             }
+            */
+            
+            onTriggered: {
+                /*
+                root.pageStack.find(function(item){
+                    if (item.id == "toDoPage") {
+                        console.log("this is here \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                        return true;
+                    }
+                });
+                */
+                console.log(root.pageStack.get(0).title);
+                //console.log(root.pageStack.lastItem.title ,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                if (root.pageStack.lastItem.title !== "To Do") {
+                    root.pageStack.push(toDoPage);
+                }
+            }
+            
         }
     ]
     showContentWhenCollapsed: true
